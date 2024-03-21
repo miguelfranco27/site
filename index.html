@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" type="image/png" href="assets/css/img/alfabeto.png">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <title>Miguel Franco</title>
+        
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Miguel</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home">Home</a></li>
+                        <li class="nav__item"><a href="#about" >Sobre</a></li>
+                        <li class="nav__item"><a href="#work" >projetos</a></li>
+                        <li class="nav__item"><a href="#skills" >Habilidades</a></li>
+                        <li class="nav__item"><a href="#contact" >contato</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Oi, eu sou <span class="home__title-color">Miguel</span><br> Bem vindo!</h1>
+
+                    <a href="#about" class="button">Começar</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/miguel-de-abreu-90580a2b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtB%2Bg7aRoSuyLA4pg1qJyxg%3D%3D" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="assets/css/img/curriculo-Miguel Franco (2).pdf" download class="home__social-icon"><i class='bx bxl-behance' > </i></a>
+                    <a href="https://github.com/miguelfranco27" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                  
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <!-- -->
+            <section class="about section " id="about">
+                
+                <h2 class="section-title">sobre </h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/css/img/gif/gifpac.gif" class="imgsobre" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">eu sou Miguel</h2>
+                        <p class="about__text">Olá, me chamo Miguel, tenho 19 anos e moro em São Paulo. Atualmente, estudo Marketing na Universidade de Mogi das Cruzes (UMC).
+
+                            Acabei gostando muito da área e no momento, estou dedicado a aprimorar meus conhecimentos, buscando experiência e aprendizado.
+                            
+                            Além disso, sou formado em Análise e Desenvolvimento de Sistemas e possuo experiência com programação e design gráfico.</p>           
+                    </div>  
+                    
+                    
+                </div>
+
+
+
+               <!--===== WORK =====-->
+               <section class="work section" id="work">
+                
+                <h2 class="section-title">projetos</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="item" id="item1">
+                        <button class="btn" onclick="openModal('item1')">Ver Projeto</button>
+                        <p class="conteudo-modal" style="display: none;">Design de landing page para a marca conceitual de banco digital: NEXUBANK.</p>
+                      </div>
+                      <div class="item" id="item2">
+                        <button class="btn" onclick="openModal('item2')">Ver Projeto</button>
+                        <p class="conteudo-modal" style="display: none;">Publicidade para marca conceitual de chocolate, criada utilizando os programas Photoshop e Adobe Illustrator.</p>
+                      </div>
+                      <div class="item" id="item3">
+                        <button class="btn" onclick="openModal('item3')">Ver Projeto</button>
+                        <p class="conteudo-modal" style="display: none;">Publicidade para a marca conceitual de barra de proteína POWER PRO PROTEIN, criada utilizando os programas Photoshop e Adobe Illustrator.</p>
+                      </div>
+                      <div class="item" id="item4">
+                        <button class="btn" onclick="openModal('item4')">Ver Projeto</button>
+                        <p class="conteudo-modal" style="display: none;">Publicidade para marca conceitual de Fone de ouvido, criada utilizando os programas Photoshop e Adobe Illustrator</p>
+                      </div>
+                      <div class="item" id="item5">
+                        <button class="btn" onclick="openModal('item5')">Ver Projeto</button>
+                        <p class="conteudo-modal" style="display: none;">Design de landing page para a marca conceitual de banco digital: NEXUBANK.</p>
+                      </div>
+                      <div class="item" id="item6">
+                        <button class="btn" onclick="openModal('item6')">Ver Projeto</button>
+                        <p class="conteudo-modal" style="display: none;">Design de landing page para a marca conceitual de banco digital: NEXUBANK.</p>
+                      </div>
+                </div>
+            </section>
+
+      
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                 
+                  <div class="imgmodal"></div>
+                  <p id="paragrafo-modal"></p>
+                </div>
+              </div>
+      
+              
+            
+        <div id="educaçao" class="container-fluid">
+          
+            <h2 class="section-title">Formação</h2>
+            <h2>Tecnólogo em Análise e Desenvolvimento de Sistemas 2022-2023</h1>
+            <h3> Universidade de Mogi das Cruzes</h2>
+            <p>Durante essa formação, obtive conhecimento em programação fazendo projetos e praticando. E, por ter que criar os designs de sites e aplicativos, acabei gostando muito e me interessando pela área de visual e comunicação.</p>
+            <br>
+            <h2>Marketing - 2024 - cursando no momento</h1>
+            <h3> Universidade de Mogi das Cruzes</h2>
+            <p>Foi onde me encontrei e acabei gostando muito da área. Tenho grande interesse em entender como as estratégias de comunicação influenciam o mercado e a percepção do consumidor.</p>
+          </div> 
+            
+           
+          
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Habilidades</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                      
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class="icon" src="assets/css/img/photoshop.png" alt="">  <span class="skills__name">Photoshop</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class="icon" src="assets/css/img/illustrator.png" alt="">
+                                <span class="skills__name">Illustrator</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"> 67%</span>
+                            </div>
+                        </div>
+
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class="icon" src="assets/css/img/gif/inst.png" alt="">
+                                <span class="skills__name">instagram</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class="icon" src="assets/css/img/facebook.png" alt="">
+                                <span class="skills__name">facebook</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class="icon" src="assets/css/img/twitter.png" alt="">
+                                <span class="skills__name">twitter</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">50%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class="icon" src="assets/css/img/excel.png" alt="">
+                                <span class="skills__name">Excel</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <div class="skills__container bd-grid">          
+                            <div>
+                             
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <img class="icon" src="assets/css/img/word.png" alt="">
+                                        <span class="skills__name">Word</span>
+                                    </div>
+                                    <div class="skills__bar skills__html">
+        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">100%</span>
+                                    </div>
+                                </div>
+        
+
+
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <img class="icon" src="assets/css/img/slide.png" alt="">
+                                        <span class="skills__name">Powerpoint</span>
+                                    </div>
+                                    <div class="skills__bar skills__css">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">85%</span>
+                                    </div>
+                                </div>
+        
+        
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <img class="icon" src="assets/css/img/js.png" alt="">
+                                        <span class="skills__name">JavaScript</span>
+                                    </div>
+                                    <div class="skills__bar skills__js">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">65%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <img class="icon" src="assets/css/img/html-5 (1).png" alt="">
+                                        <span class="skills__name">HTML</span>
+                                    </div>
+                                    <div class="skills__bar skills__css">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">94%</span>
+                                    </div>
+                                </div>
+        
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <img class="icon" src="assets/css/img/css-3.png" alt="">
+                                        <span class="skills__name">CSS</span>
+                                    </div>
+                                    <div class="skills__bar skills__css">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">85%</span>
+                                    </div>
+                                </div>
+        
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                     <img class="icon" src="assets/css/img/windows.png" alt="">
+                                        <span class="skills__name">UX/UI</span>
+                                    </div>
+                                    <div class="skills__bar skills__ux">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">85%</span>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                    </div>
+                </div>
+
+
+                
+            </section>
+
+            <div id="educaçao" class="container-fluid">
+                <h2 class="section-title">Experiência</h2>
+                <h2>Designer Freelancer</h2>
+                <p>Atualmente, estou atuando como designer, utilizando ferramentas como Photoshop, Adobe e Figma, e já executei projetos de design de posts e social media.</p>
+                <br>
+                <h2>Programador Freelancer</h2>
+                <p class="pE">Também atuei como freelancer em programação, realizando diversos projetos, incluindo Landing Pages e sistemas semelhantes a este site.</p>
+              </div> 
+            </div>
+            
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contato</h2>
+                
+                <div class="contact__container bd-grid">
+                    
+        <div class="contacts">
+           
+            <p>Telefone: 11968504974</p>
+            <p><a href="https://api.whatsapp.com/send?phone=5511968504974&text=Ol%C3%A1%2C%20estou%20interessado%20em%20seus%20servi%C3%A7os" target="_blank">Enviar WhatsApp</a></p>
+            <p>E-mail: Francomiguel79a@gmail.com</p>
+            <p><a href="mailto:francomiguel79a@gmail.com">Enviar E-mail</a></p>
+ 
+
+            
+            <div class="imagemcontato"></div>
+          </div>
+
+<img src="assets/css/img/gif/gifnovo.gif" class="gifnovo" alt="">
+                </div>
+                
+            </section>
+
+
+
+
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            
+           
+           
+            <p class="footer__copy"> © 2024 Miguel Franco de Abreu. Todos os direitos  reservados</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script>
+            // Para o carrossel principal
+            const carousel = document.querySelector('.carousel');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            
+            let currentIndex = 0;
+            const totalProjects = document.querySelectorAll('.item').length;
+            let projectWidth = 400; // Largura padrão do projeto
+            let projectsPerScreen = 1; // Número de projetos visíveis por tela
+            
+            updateProjectWidth(); // Atualiza a largura do projeto inicialmente
+            updateCarousel(); // Atualiza o carrossel inicialmente
+            
+            window.addEventListener('resize', () => {
+              updateProjectWidth();
+              updateCarousel();
+            });
+            
+            prevBtn.addEventListener('click', () => {
+              currentIndex = Math.max(currentIndex - 1, 0);
+              updateCarousel();
+            });
+            
+            nextBtn.addEventListener('click', () => {
+              currentIndex = Math.min(currentIndex + 1, totalProjects - projectsPerScreen);
+              updateCarousel();
+            });
+            
+            function updateProjectWidth() {
+              const containerWidth = document.querySelector('.carousel-container').offsetWidth;
+              projectsPerScreen = Math.floor(containerWidth / projectWidth);
+              projectWidth = containerWidth / projectsPerScreen;
+            }
+            
+            function updateCarousel() {
+              const maxIndex = totalProjects - projectsPerScreen;
+              currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
+            
+              const offset = -currentIndex * projectWidth;
+              carousel.style.transform = `translateX(${offset}px)`;
+            }
+            
+            // Para a galeria de projetos para dispositivos móveis
+            const galeria = document.querySelector('.galeria');
+            const anteriorBtn = document.querySelector('.anterior-btn');
+            const proximoBtn = document.querySelector('.proximo-btn');
+            
+            let currentIndexGaleria = 0;
+            const totalProjetos = document.querySelectorAll('.projeto').length;
+            const projetoWidth = document.querySelector('.projeto').offsetWidth;
+            
+            anteriorBtn.addEventListener('click', () => {
+              currentIndexGaleria = (currentIndexGaleria - 1 + totalProjetos) % totalProjetos;
+              atualizarGaleria();
+            });
+            
+            proximoBtn.addEventListener('click', () => {
+              currentIndexGaleria = (currentIndexGaleria + 1) % totalProjetos;
+              atualizarGaleria();
+            });
+            
+            function atualizarGaleria() {
+              const offset = -currentIndexGaleria * projetoWidth;
+              galeria.style.transform = `translateX(${offset}px)`;
+            }
+            
+            function openModal(itemId) {
+              var item = document.getElementById(itemId);
+              var backgroundImage = window.getComputedStyle(item, null).getPropertyValue('background-image');
+              var paragrafo = item.querySelector('.conteudo-modal').innerHTML;
+                
+              document.querySelector('.imgmodal').style.backgroundImage = backgroundImage;
+              document.getElementById('paragrafo-modal').innerHTML = paragrafo; // Apenas no modal
+              document.getElementById('myModal').style.display = 'block';
+            }
+            
+            function closeModal() {
+              document.getElementById('myModal').style.display = 'none';
+            }
+            
+            document.addEventListener("DOMContentLoaded", function() {
+              // Seletor para todos os links com a classe link-scroll
+              var links = document.querySelectorAll('.link-scroll');
+            
+              // Adiciona um evento de clique a cada link
+              links.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                  event.preventDefault(); // Impede o comportamento padrão do link
+                  
+                  // Obtém o alvo do link (o ID do elemento de destino)
+                  var targetId = this.getAttribute('href');
+            
+                  // Obtém a posição do elemento de destino
+                  var targetPosition = document.querySelector(targetId).offsetTop;
+            
+                  // Animação de rolagem suave
+                  window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                  });
+                });
+              });
+            });
+            </script>
+        
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
