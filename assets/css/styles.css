@@ -339,10 +339,13 @@ background-color: #0F1512;
 /*celular*/
 @media screen and (max-width: 767px) {
   body{
-    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    
   }
   .work__container {
     row-gap: 2rem;
+    
     margin-left: 23px;
      background-color: #fff;
   }
@@ -357,6 +360,7 @@ background-color: #0F1512;
  
     transition: 0.5s;
   }
+  
   .gifnovo{ width: 270px; border-radius: 8px; }
   .contact__container {
     display: flex; flex-direction: column;
@@ -402,11 +406,13 @@ background-color: #0F1512;
 
 
 #educaçao{
-
-margin: -30px;
-text-align: center;
-  font-size: larger;
-}
+  border-radius: 15px;
+    
+    
+    color: rgb(0, 0, 0); 
+ background-color: #ffffff;
+  
+ }
 #educaçao p{
   font-size: small; text-align: center;
   margin-bottom: 20px;
@@ -447,7 +453,7 @@ text-align: center;
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-right: 20px;
+
 }
 
 /*Active menu*/
@@ -726,7 +732,7 @@ margin-top: -50px;
     padding: 4rem 0 2rem;
   }
   body{
-    
+
       overflow-x: hidden;
   }
   
@@ -789,6 +795,8 @@ margin-top: -50px;
     
     
   }
+  
+
   .contacts{font-size: larger;
    color: white;
    display: flex;
@@ -803,14 +811,16 @@ margin-top: -50px;
 }
 @media screen and (min-width: 768px) {
   body {
+    
     margin: 0;
 
   }
   
 #educaçao{
  border-radius: 15px;
-   margin: 30px;
-   color: white;
+    margin: 30px;
+   
+   color: white; 
 background-color: #18181C;
  
 }
