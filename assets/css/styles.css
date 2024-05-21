@@ -265,14 +265,15 @@ ul {
   padding: 0;
   list-style: none;
 }
-
+/*texto*/
 a {
- color: white;
+ color:#FF0544;
+ font-weight: bolder;
   text-decoration: none;
 }
 a:hover{
  
-  color: rgb(0, 162, 255);
+  color: rgb(0, 0, 0);
 }
 
 img {
@@ -285,7 +286,7 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color:  rgba(255, 0, 64, 0.979);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -299,7 +300,7 @@ img {
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color:  rgba(255, 0, 64, 0.979);;
 }
 
 .section {
@@ -321,10 +322,11 @@ img {
   position: fixed;
  
   top: 0;
+ 
   left: 0;
   z-index: var(--z-fixed);
-background-color: #0F1512;
- box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.137);
+background-color: #ffffff;
+ box-shadow: 5px 5px 10px rgba(78, 75, 75, 0.13);
  
 }
 
@@ -369,7 +371,7 @@ background-color: #0F1512;
     border-radius: 15px;
     justify-content: center;
     gap: 20px;padding: 30px;
-    background-color: #18181C;
+  background-color: #000000;
   }
   .contacts a{   
     width: 160px;
@@ -377,7 +379,7 @@ background-color: #0F1512;
     margin-top:170px;
    padding: 9px;
     border-radius: 8px;
-    background-color: #3E6FF4;
+    background-color: #FF0544;
     border: none; /* Cor da borda */
     color: #ffffff; /* Cor do texto */
    
@@ -407,7 +409,7 @@ background-color: #0F1512;
 
 #educaçao{
   border-radius: 15px;
-    
+    box-shadow: 3px 6px 14px rgba(27, 26, 26, 0.144);
     
     color: rgb(0, 0, 0); 
  background-color: #ffffff;
@@ -417,10 +419,9 @@ background-color: #0F1512;
   font-size: small; text-align: center;
   margin-bottom: 20px;
 }
-#educaçao h1{
-  text-align: center;
-  font-size: larger;
-}
+.h1formaçao{color:  rgba(255, 0, 64, 0.979);
+text-align: start;}
+
 #educaçao h2,h3{
   text-align: center;
   font-size: medium;
@@ -450,7 +451,7 @@ background-color: #0F1512;
 
 }
 .nav__toggle {
-  color: white;
+  color: #FF0544;
   font-size: 1.5rem;
   cursor: pointer;
 
@@ -492,7 +493,7 @@ background-color: #0F1512;
   margin-bottom: var(--mb-5);
 }
 .home__title-color {
-  color: var(--first-color);
+  color: rgba(255, 0, 64, 0.979);
 }
 .home__social {
   display: flex;
@@ -540,7 +541,7 @@ font-weight: lighter;
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color:  rgba(255, 0, 64, 0.979);;
   color: #fff;
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
@@ -553,8 +554,8 @@ font-weight: lighter;
 
 /* ===== ABOUT =====*/
 .about__container {
-  row-gap: 2rem;
-
+ 
+background-color: #ffffff;
 
 
  
@@ -589,13 +590,14 @@ margin-top: -50px;
 /* ===== SKILLS =====*/
 .skills__container {
 
-  
+align-items: center;
 
- display: grid;
-  
+
+
   /* Espaço entre as divs */
 
 }
+
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
@@ -626,7 +628,7 @@ margin-top: -50px;
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--first-color);
+  background-color: rgba(255, 0, 64, 0.979);
   height: 0.25rem;
   border-radius: 0.5rem;
   z-index: var(--z-back);
@@ -670,28 +672,12 @@ margin-top: -50px;
 }
 
 /* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
-}
+
+
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: #202020;
+  background-color:  rgba(255, 0, 64, 0.979);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -785,8 +771,9 @@ margin-top: -50px;
     margin-top:170px;
    padding: 9px;
     border-radius: 8px;
-    background-color: #3E6FF4;
-    border: none; /* Cor da borda */
+    background-color: #13150f44;
+  border: solid#FF0544 1px;
+    
     color: #ffffff; /* Cor do texto */
    
    cursor: pointer;
@@ -802,12 +789,13 @@ margin-top: -50px;
    display: flex;
    flex-direction: column;
    gap: 30px;
+
   text-align: start;}
   .gifnovo{ width: 270px; border-radius: 8px; }
 }
 .contacts a:hover{
-  background-color: #13150f44;
-  border: solid rgb(6, 85, 255) 1px;
+ background-color: #FF0544;
+  F0544 
 }
 @media screen and (min-width: 768px) {
   body {
@@ -818,20 +806,29 @@ margin-top: -50px;
   
 #educaçao{
  border-radius: 15px;
-    margin: 30px;
-   
-   color: white; 
-background-color: #18181C;
+    margin: 70px;
+   text-align: start;
+   color: rgb(0, 0, 0); 
+box-shadow: 4px 5px 13px bl;
  
 }
-#educaçao p{
+#resumo{ border-radius: 15px;
+
+ text-align: center;
+
+ color: white; 
+background-color: #191946;}
+#educaçao p{text-align: start;
   font-size: medium;
 }
 #educaçao h1{
+  text-align: center;
+  margin-bottom: 30px;
   font-size: larger;
 }
 #educaçao h2,h3{
   font-size: larger;
+  text-align: start;
 }
   .section {
     padding-top: 4rem;
